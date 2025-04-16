@@ -28,48 +28,40 @@
         }
     </style>
 </head>
+
 <body>
-    <form id="form1" runat="server">
-        <div style="height: 121px; width: 653px">
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style3">
-                        <br />
-                        <br />
-                        <br />
-                        Nombre de Localidad:</td>
-                    <td class="auto-style4">
-                        <asp:Label ID="lblPlace" runat="server" Font-Bold="True" Text="Localidad"></asp:Label>
-                        <br />
-                        <br />
-                        <br />
-                        <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="112px"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style2">
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                    </td>
-                    <td class="auto-style5">
-                        <asp:Button ID="btnSavePlace" runat="server" Text="Guardar Localidad" Width="134px" />
-                        <br />
-                        <br />
-                        <asp:Label ID="lblUser" runat="server" Font-Bold="True" Font-Strikeout="False" Text="Usuarios"></asp:Label>
-                        <br />
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </form>
+    <form id="form1" runat="server">
+        <h2>Localidades</h2>
+        <label for="localidad">Nombre de Localidad:</label>
+        <asp:TextBox ID="tbxPlace" runat="server"></asp:TextBox><br><br>
+        <asp:Button ID="btnSavePlace" runat="server" Text="Guardar Localidad" /><br><br>
+        
+        <h2>Usuarios</h2>
+        <label for="nombreUsuario">Nombre usuario:</label>
+        <asp:TextBox ID="tbxUsername" runat="server"></asp:TextBox><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <asp:TextBox ID="tbxPassword" runat="server" TextMode="Password"></asp:TextBox><br><br>
+        
+        <label for="repetirContrasena">Repetir Contraseña:</label>
+        <asp:TextBox ID="tbxPassword2" runat="server" TextMode="Password"></asp:TextBox><br><br>
+        
+        <label for="correo">Correo electrónico:</label>
+        <asp:TextBox ID="tbxMail" runat="server" TextMode="Email"></asp:TextBox><br><br>
+        
+        <label for="cp">CP:</label>
+        <asp:TextBox ID="tbxCp" runat="server"></asp:TextBox><br><br>
+        
+        <label for="localidades">Localidades:</label>
+        <asp:DropDownList ID="localidades" runat="server">
+            
+            
+            
+        </asp:DropDownList><br><br>
+        
+        <asp:Button ID="btnSaveUser" runat="server" Text="Guardar Usuario" /><br><br>
+        
+        <asp:Button ID="btnGoInicio" runat="server" Text="Ir a inicio" />
+    </form>
 </body>
 </html>

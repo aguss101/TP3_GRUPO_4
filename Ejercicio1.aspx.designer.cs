@@ -51,6 +51,15 @@ namespace TP3_GRUPO_4
         protected global::System.Web.UI.WebControls.TextBox txtnameLoc;
 
         /// <summary>
+        /// Control rfvPlaces.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPlaces;
+
+        /// <summary>
         /// Control saveLoc.
         /// </summary>
         /// <remarks>
@@ -168,13 +177,13 @@ namespace TP3_GRUPO_4
         protected global::System.Web.UI.WebControls.Label lbloca;
 
         /// <summary>
-        /// Control DropDownList1.
+        /// Control ddlLocations.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlLocations;
 
         /// <summary>
         /// Control Button1.

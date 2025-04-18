@@ -102,7 +102,9 @@
                 <td class="auto-style24">
                     <asp:TextBox ID="txtnameLoc" runat="server" Width="192px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="rfvPlaces" runat="server" ControlToValidate="txtnameLoc">Por favor ingrese un Texto!</asp:RequiredFieldValidator>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -116,7 +118,7 @@
                 <td class="auto-style29"></td>
                 <td class="auto-style22"></td>
                 <td class="auto-style26">
-                    <asp:Button ID="saveLoc" runat="server" Text="Guardar localidad" Width="149px" />
+                    <asp:Button ID="saveLoc" runat="server" Text="Guardar localidad" Width="149px" OnClick="saveLoc_Click" />
                     </td>
                 <td class="auto-style21"></td>
                 <td class="auto-style21"></td>
@@ -205,7 +207,7 @@
                     <asp:Label ID="lbloca" runat="server" Text="Localidades:"></asp:Label>
                     </td>
                 <td class="auto-style24">
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="ddlLocations" runat="server">
                         <asp:ListItem></asp:ListItem>
                         <asp:ListItem>Don Torcuato</asp:ListItem>
                         <asp:ListItem>Gral. Pacheco</asp:ListItem>

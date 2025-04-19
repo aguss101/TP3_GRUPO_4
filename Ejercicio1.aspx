@@ -163,7 +163,7 @@
                     <asp:Label ID="lblpassword" runat="server" Text="Contraseña:"></asp:Label>
                     </td>
                 <td class="auto-style24">
-                    <asp:TextBox ID="txtpassword" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtpassword" runat="server" TextMode="Password" ></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -174,8 +174,13 @@
                     <asp:Label ID="lblRTpass" runat="server" Text="Repetir contraseña:"></asp:Label>
                     </td>
                 <td class="auto-style26">
-                    <asp:TextBox ID="txtRTpass" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtRTpass" runat="server" TextMode="Password" ></asp:TextBox>
                 </td>
+                <td>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpassword" 
+                        ControlToValidate="txtRTpass" Operator="Equal" Type="String">Las contraseñas no coinciden!</asp:CompareValidator>
+                </td>
+                <td>&nbsp;</td>
                 <td class="auto-style21"></td>
                 <td class="auto-style21"></td>
             </tr>

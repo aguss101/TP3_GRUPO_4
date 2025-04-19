@@ -38,5 +38,10 @@ namespace TP3_GRUPO_4
             }
             txtnameLoc.Text = "";
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            saveUserLabel.Visible = true;
+        }
     }
     }

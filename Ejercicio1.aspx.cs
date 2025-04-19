@@ -39,7 +39,7 @@ namespace TP3_GRUPO_4
                 {
                     ddlLocations.Items.Add(new ListItem(aux));
                 }
-            txtnameLoc.Text = "";
+            txtnameLoc.Text = "";       
             }
             
         }

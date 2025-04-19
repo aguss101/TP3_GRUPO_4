@@ -187,7 +187,9 @@
                 <td class="auto-style24">
                     <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RegularExpressionValidator ID="revCorreo" runat="server" ControlToValidate="txtCorreo" ErrorMessage="RegularExpressionValidator" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">Ingrese un correo electrónico válido</asp:RegularExpressionValidator>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>

@@ -15,24 +15,28 @@ namespace TP3_GRUPO_4
         }
         protected void saveLoc_Click(object sender, EventArgs e)
         {
-            string aux = txtnameLoc.Text.ToString();
-            bool itemExists = false;
+            
+            
+                string aux = txtnameLoc.Text.ToString();
+                bool itemExists = false;
 
-            foreach (ListItem item in ddlLocations.Items)
-            {
-                if (item.Text == aux)
+                foreach (ListItem item in ddlLocations.Items)
                 {
-                    itemExists = true;
-                    break;
+                    if (item.Text == aux)
+                    {
+                        itemExists = true;
+                        break;
+                    }
+
                 }
 
-            }
-
-            if (!itemExists)
-            {
-                ddlLocations.Items.Add(new ListItem(aux));
-            }
-            txtnameLoc.Text = "";
+                if (!itemExists)
+                {
+                    ddlLocations.Items.Add(new ListItem(aux));
+                }
+            
+          
+                txtnameLoc.Text = "";
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
@@ -45,6 +49,11 @@ namespace TP3_GRUPO_4
             txtCorreo.Text = "" ;
             txtCP.Text = "";
             ddlLocations.Text = "";  
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
         }
     }
 }

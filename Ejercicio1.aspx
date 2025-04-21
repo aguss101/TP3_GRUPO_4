@@ -133,7 +133,7 @@
                     <asp:TextBox ID="txtnameLoc" runat="server" Width="192px" ValidationGroup="Group1"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="rfvPlaces" runat="server" ControlToValidate="txtnameLoc">Por favor ingrese un Texto!</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvPlaces" runat="server" ControlToValidate="txtnameLoc" ValidationGroup="Group1">Por favor ingrese un Texto!</asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -297,7 +297,7 @@
             <tr>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style16">
-                    <asp:Button ID="Button2" runat="server" Text="Ir a inicio: .aspx" Width="132px" />
+                    <asp:Button ID="Button2" runat="server" Text="Ir a inicio: .aspx" Width="132px" OnClick="Button2_Click" />
                 </td>
                 <td class="auto-style24">&nbsp;</td>
                 <td>&nbsp;</td>

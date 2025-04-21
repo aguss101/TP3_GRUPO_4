@@ -39,9 +39,13 @@ namespace TP3_GRUPO_4
             txtnameLoc.Text = "";
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnSave_Click(object sender, EventArgs e)
         {
-            saveUserLabel.Visible = true;
+            
+            txtnameUser.Text = "" ;
+            txtCorreo.Text = "" ;
+            txtCP.Text = "";
+            ddlLocations.Text = "";  
         }
     }
-    }
+}

@@ -83,6 +83,21 @@
         .auto-style37 {
             height: 50px;
         }
+        .auto-style38 {
+            width: 38px;
+            height: 23px;
+        }
+        .auto-style39 {
+            width: 174px;
+            height: 23px;
+        }
+        .auto-style40 {
+            width: 415px;
+            height: 23px;
+        }
+        .auto-style41 {
+            height: 23px;
+        }
     </style>
 </head>
 
@@ -253,17 +268,17 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style16">&nbsp;</td>
-                <td class="auto-style24">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style38"></td>
+                <td class="auto-style39"></td>
+                <td class="auto-style40"></td>
+                <td class="auto-style41"></td>
+                <td class="auto-style41"></td>
             </tr>
             <tr>
                 <td class="auto-style27">&nbsp;</td>
                 <td class="auto-style16">&nbsp;</td>
                 <td class="auto-style24">
-                    <asp:Button ID="Button1" runat="server" Text="Guardar usuario" Width="132px" OnClick="Button1_Click" ValidationGroup="Group2" />
+                    <asp:Button ID="btnSave" runat="server" Text="Guardar usuario" Width="132px" OnClick="btnSave_Click" ValidationGroup="Group2" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

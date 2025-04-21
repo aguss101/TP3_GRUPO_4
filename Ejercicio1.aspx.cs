@@ -13,10 +13,6 @@ namespace TP3_GRUPO_4
         {
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         protected void saveLoc_Click(object sender, EventArgs e)
         {
             string aux = txtnameLoc.Text.ToString();
@@ -41,7 +37,10 @@ namespace TP3_GRUPO_4
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
-            
+            saveUserLabel.Visible = true;
+            lblW.Text = "Bienvenido " + txtnameUser.Text ;
+            lblW.Visible = true;
+
             txtnameUser.Text = "" ;
             txtCorreo.Text = "" ;
             txtCP.Text = "";

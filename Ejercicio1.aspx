@@ -284,13 +284,15 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style27">&nbsp;</td>
-                <td class="auto-style16">&nbsp;</td>
-                <td class="auto-style24">
+                <td class="auto-style38"></td>
+                <td class="auto-style39"></td>
+                <td class="auto-style40">
                     <asp:Label ID="saveUserLabel" runat="server" Text="Guardado Exitoso!" Visible="False"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style41">
+                    <asp:Label ID="lblW" runat="server" ></asp:Label>
+                </td>
+                <td class="auto-style41"></td>
             </tr>
             <tr>
                 <td class="auto-style27">&nbsp;</td>

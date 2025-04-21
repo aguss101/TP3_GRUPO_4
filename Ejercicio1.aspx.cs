@@ -15,28 +15,37 @@ namespace TP3_GRUPO_4
         }
         protected void saveLoc_Click(object sender, EventArgs e)
         {
-            
-            
-                string aux = txtnameLoc.Text.ToString();
-                bool itemExists = false;
+            string aux = txtnameLoc.Text.ToString();
 
-                foreach (ListItem item in ddlLocations.Items)
+            // Validación: si no se escribió nada
+            if (string.IsNullOrWhiteSpace(aux))
+            {
+                lblLocError.Text = "Ingrese localidad";
+                lblLocError.Visible = true;
+                return;
+            }
+            else
+            {
+                lblLocError.Visible = false;
+            }
+
+            bool itemExists = false;
+
+            foreach (ListItem item in ddlLocations.Items)
+            {
+                if (item.Text == aux)
                 {
-                    if (item.Text == aux)
-                    {
-                        itemExists = true;
-                        break;
-                    }
-
+                    itemExists = true;
+                    break;
                 }
+            }
 
-                if (!itemExists)
-                {
-                    ddlLocations.Items.Add(new ListItem(aux));
-                }
-            
-          
-                txtnameLoc.Text = "";
+            if (!itemExists)
+            {
+                ddlLocations.Items.Add(new ListItem(aux));
+            }
+
+            txtnameLoc.Text = "";
         }
 
         protected void btnSave_Click(object sender, EventArgs e)

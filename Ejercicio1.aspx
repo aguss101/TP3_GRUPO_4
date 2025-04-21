@@ -129,11 +129,13 @@
                 <td class="auto-style16">
                     <asp:Label ID="lblnameLoc" runat="server" Text="Nombre de localidad: "></asp:Label>
                     </td>
-                <td class="auto-style24">
-                    <asp:TextBox ID="txtnameLoc" runat="server" Width="192px" ValidationGroup="Group1"></asp:TextBox>
-                </td>
+              <td class="auto-style24">
+    <asp:TextBox ID="txtnameLoc" runat="server" Width="192px" ValidationGroup="Group1"></asp:TextBox>
+    <br />
+    <asp:Label ID="lblLocError" runat="server" ForeColor="Red" Visible="False"></asp:Label>
+</td>
                 <td>
-                    <asp:RequiredFieldValidator ID="rfvPlaces" runat="server" ControlToValidate="txtnameLoc" ValidationGroup="Group1">Por favor ingrese un Texto!</asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfvPlaces" runat="server" ControlToValidate="txtnameLoc" ValidationGroup="Group1">Por favor ingrese una localidad</asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>

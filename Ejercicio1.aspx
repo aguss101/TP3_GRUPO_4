@@ -134,8 +134,10 @@
     <br />
     <asp:Label ID="lblLocError" runat="server" ForeColor="Red" Visible="False"></asp:Label>
 </td>
-                <td>
+                <td id="lblLocError1">
                     <asp:RequiredFieldValidator ID="rfvPlaces" runat="server" ControlToValidate="txtnameLoc" ValidationGroup="Group1">Por favor ingrese una localidad</asp:RequiredFieldValidator>
+                    <br />
+    <asp:Label ID="lblLocError0" runat="server" ForeColor="Red" Visible="False">Esta localidad ya fue ingresada!</asp:Label>
                 </td>
                 <td>&nbsp;</td>
             </tr>

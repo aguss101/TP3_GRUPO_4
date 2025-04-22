@@ -16,6 +16,7 @@ namespace TP3_GRUPO_4
         protected void saveLoc_Click(object sender, EventArgs e)
         {
             string aux = txtnameLoc.Text.ToString();
+            lblLocError0.Visible = false;
 
             // Validación: si no se escribió nada
             if (string.IsNullOrWhiteSpace(aux))
@@ -33,16 +34,24 @@ namespace TP3_GRUPO_4
 
             foreach (ListItem item in ddlLocations.Items)
             {
-                if (item.Text == aux)
+                if (item.Text.ToLower() == aux.ToLower())
                 {
                     itemExists = true;
+                    lblLocError0.Visible = true;
                     break;
                 }
             }
 
             if (!itemExists)
             {
-                ddlLocations.Items.Add(new ListItem(aux));
+                string[] locArr = aux.Split(' ');
+                string locality = "";
+                foreach(string parts in locArr)
+                {
+                    locality += parts.Substring(0, 1).ToUpper() + parts.Substring(1).ToLower() + " "; 
+                }
+                
+                ddlLocations.Items.Add(new ListItem(locality.Trim()));
             }
 
             txtnameLoc.Text = "";
